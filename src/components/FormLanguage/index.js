@@ -5,7 +5,7 @@ import { Input } from '@chakra-ui/react';
 
 const FormLanguage = ({ onSubmit, values }) => {
   return (
-    // TODO add validationSchema={schema}
+    // TODO: add validationSchema={schema}
     <Formik enableReinitialize={true} initialValues={values} onSubmit={onSubmit}>
       {(props) => {
         return (

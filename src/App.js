@@ -5,8 +5,7 @@ import cookies from 'js-cookie';
 import { useEffect, useState } from 'react';
 import GlobalIcon from './components/Icons/GlobalIcon';
 import { ChakraProvider } from '@chakra-ui/react';
-import translateFile from './components/notMainTranslation/en/translation.json'; // Your file path
-import translateFilessssssss from '../public/assets/locales/en/translation.json'; // Your file path
+import translateFile from '../public/assets/locales/en/translation.json'; // Your file path
 
 import FormLanguage from './components/FormLanguage';
 
@@ -47,6 +46,7 @@ function App() {
   const [initValues, setInitValues] = useState(translateFile);
   const SubmitFormik = (values) => {
     setInitValues(values);
+    // TODO: write this values in translation file
     console.log(values);
   };
 
