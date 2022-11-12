@@ -44,11 +44,6 @@ function App() {
   }, [currentLanguage, t]);
 
   const [initValues, setInitValues] = useState(translateFile);
-  const SubmitFormik = (values) => {
-    setInitValues(values);
-    // TODO: write this values in translation file
-    console.log(values);
-  };
 
   return (
     <ChakraProvider>
@@ -85,7 +80,9 @@ function App() {
         <br />
         <br />
         {/* translate (lable and input) */}
-        <FormLanguage onSubmit={SubmitFormik} values={initValues} />
+        <FormLanguage />
+        <br />
+        <br />
       </div>
     </ChakraProvider>
   );
